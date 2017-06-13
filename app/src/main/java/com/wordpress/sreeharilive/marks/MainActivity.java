@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     EditText daa,ic,ss,cn,se,unix;
     Button btn;
     double a,b,c,d,e,f,sum;
+
     String s,ad;
 
     @Override
@@ -29,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
     }
    public void calculate(View v){
        a = Double.parseDouble(daa.getText().toString());
-       b = Double.parseDouble(daa.getText().toString());
-       c = Double.parseDouble(daa.getText().toString());
-       d = Double.parseDouble(daa.getText().toString());
-       e = Double.parseDouble(daa.getText().toString());
-       f = Double.parseDouble(daa.getText().toString());
+       b = Double.parseDouble(ic.getText().toString());
+       c = Double.parseDouble(ss.getText().toString());
+       d = Double.parseDouble(cn.getText().toString());
+       e = Double.parseDouble(se.getText().toString());
+       f = Double.parseDouble(unix.getText().toString());
        sum =a+b+c+d+e+f;
        Toast.makeText(this,"sum="+sum,Toast.LENGTH_SHORT).show();
        sum=((sum/360)*100);
